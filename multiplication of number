@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int n,mul=1,num;
+    scanf("%d",&n);
+    num=n;
+    while(n)
+    {
+       mul=mul*(n%10);
+       n=n/10;
+    }
+    printf("multiplication of %d is %d ",num,mul);
+}
