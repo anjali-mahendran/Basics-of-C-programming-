@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum=0,temp;
+    scanf("%d",&n);
+    temp=n;
+    while(n)
+    {
+        sum=sum+n%10;
+        n=n/10;
+    }
+    if(temp%sum==0)
+      printf("the given %d is an harshad number",temp);
+      else
+      printf("the given %d is not an harshad number",temp);
+}
