@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int n,square,flag=0,num;
+    scanf("%d",&n);
+    square=n*n;
+    num=n;
+    while(n)
+    {
+        if(n%10!=square%10)
+        {
+            flag=1;
+        }
+        n=n/10;
+        square=square/10;
+    }
+    if(flag==0)
+      printf("the given number %d is an automorphic number",num);
+    else
+      printf("the given number %d is not an automorphic number",num);
+}
